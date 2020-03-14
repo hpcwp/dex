@@ -41,12 +41,12 @@ stages:
             golangVersion: "1.13.1"
             release: true 
         - script: |
-            make release-binary 
-          displayName: Make
+            go build github.com/dexidp/dex/cmd/dex
+          displayName: Go build
         - template: steps/dockerBuildPushHarbor-v1.yaml@templates
           parameters:
             registry: 'harbor'
             project: 'wyplash'
-            repo: 'dex'
+            repo: 'moloon'
             tags: |
               1.0.0 
