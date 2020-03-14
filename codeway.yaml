@@ -41,8 +41,8 @@ stages:
             golangVersion: "1.13.1"
             release: true 
         - script: |
-            go build . 
-          displayName: Go build
+            make release-binary 
+          displayName: Make
         - template: steps/dockerBuildPushHarbor-v1.yaml@templates
           parameters:
             registry: 'harbor'
