@@ -47,6 +47,6 @@ stages:
           parameters:
             registry: 'harbor'
             project: 'wyplash'
-            repo: 'moloon'
+            repo: 'dex'
             tags: |
               1.0.0 
