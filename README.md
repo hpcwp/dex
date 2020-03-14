@@ -1,6 +1,6 @@
 # dex - A federated OpenID Connect provider
 
-[![Build Status](https://dev.azure.com/hpcodeway/wyplash/_apis/build/status/hpcwp.dex?branchName=master)](https://dev.azure.com/hpcodeway/wyplash/_build/latest?definitionId=485&branchName=master)
+[![Build Status](https://dev.azure.com/hpcodeway/wyplash/_apis/build/status/hpcwp.dex?branchName=master)](https://dev.azure.com/hpcodeway/wyplash/_build/latest?definitionId=485&branchName=codeway)
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dexidp/dex/CI?style=flat-square)
 [![Go Report Card](https://goreportcard.com/badge/github.com/dexidp/dex?style=flat-square)](https://goreportcard.com/report/github.com/dexidp/dex)
