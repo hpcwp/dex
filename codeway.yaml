@@ -43,7 +43,7 @@ stages:
         - script: |
             go build github.com/dexidp/dex/cmd/dex
           displayName: Go build
-        - template: steps/golang-release-v1.yaml
+        - template: steps/golang-release-v1.yaml@templates
           parameters:
              gheToken: $(ghe_auth_token)
              golangVersion: "1.13.1"
