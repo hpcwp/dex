@@ -10,6 +10,10 @@ builds:
 - env:
   - CGO_ENABLED=0
   main: ./cmd/dex
+  goos:
+    - linux
+  goarch:
+    - amd64
 archives:
 - replacements:
     linux: Linux
