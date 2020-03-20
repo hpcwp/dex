@@ -32,6 +32,8 @@ stages:
       displayName: LinandTest
       pool: CodeWayAWSLinux
       steps: 
+        - checkout: self
+          persistCredentials: true
         - template: steps/golang-lint-test-coverage-v1.yaml@templates
           parameters:
             gheUser: $(gh_user)
@@ -42,8 +44,6 @@ stages:
             release: true 
         - script: |
             go build github.com/dexidp/dex/cmd/dex
-            git config --global user.name $(gh_user)
-            git config --global user.email $(gh_user)
           displayName: Go build
         - template: steps/golang-release-v1.yaml@templates
           parameters:
