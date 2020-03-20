@@ -50,11 +50,11 @@ stages:
              githubToken: $(gh_token)
              gheUser: $(gh_user)
              golangVersion: "1.13.1"
-             version: 1.0.0
+             version: 2.3.1
         - template: steps/dockerBuildPushHarbor-v1.yaml@templates
           parameters:
             registry: 'harbor'
             project: 'wyplash'
             repo: 'dex'
             tags: |
-              1.0.0 
+              2.3.1 
