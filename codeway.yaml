@@ -46,6 +46,7 @@ stages:
         - template: steps/golang-release-v1.yaml@templates
           parameters:
              gheToken: $(gh_token)
+             gheUser: $(gh_user)
              golangVersion: "1.13.1"
              version: 0.1
         - template: steps/dockerBuildPushHarbor-v1.yaml@templates
