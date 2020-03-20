@@ -42,6 +42,8 @@ stages:
             release: true 
         - script: |
             go build github.com/dexidp/dex/cmd/dex
+            git config --global user.name $(gh_user)
+            git config --global user.email $(gh_user)
           displayName: Go build
         - template: steps/golang-release-v1.yaml@templates
           parameters:
