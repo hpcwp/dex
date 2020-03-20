@@ -34,8 +34,8 @@ stages:
       steps: 
         - template: steps/golang-lint-test-coverage-v1.yaml@templates
           parameters:
-            gheUser: $(ghe_user)
-            gheToken: $(ghe_auth_token)
+            gheUser: $(gh_user)
+            gheToken: $(ghe_token)
             versionMajorMinor: 0.1
             linters: '--enable-all'
             golangVersion: "1.13.1"
